@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name        Distraction Free YouTube CSS
 @description This is your new file, start writing code
-@match       *://www.youtube.com/*
-@version     0.1
+@match      *://*.youtube.com/*
+@version     0.2
 @updateURL   https://raw.githubusercontent.com/MaxDilling/distractionfreeyoutube/main/blocker.css
 ==/UserStyle== */
 
@@ -10,7 +10,7 @@ ytd-compact-radio-renderer {
     display: none !important;
 }
 
-#primary .ytd-rich-grid-renderer {
+#primary .ytd-rich-grid-renderer, ytm-browse {
     display: none !important;
 }
 
@@ -18,6 +18,7 @@ ytd-compact-radio-renderer {
     display: none !important;
 }
 
-ytd-compact-video-renderer:nth-child(6) ~ ytd-compact-video-renderer {
+ytd-compact-video-renderer:nth-child(6) ~ ytd-compact-video-renderer,
+ytm-video-with-context-renderer:nth-child(5) ~ ytm-video-with-context-renderer {
     visibility: hidden !important;
 }
