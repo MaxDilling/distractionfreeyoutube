@@ -1,22 +1,7 @@
 // ==UserScript==
-// @name        Youtube Homescreen Contentblocker
+// @name        Distraction Free YouTube JS
 // @description This is your new file, start writing code
 // @match       *://www.youtube.com/*
+// @version     0.1
+// @updateURL   https://raw.githubusercontent.com/MaxDilling/distractionfreeyoutube/main/blocker.js
 // ==/UserScript==
-
-
-function removeDistraction (){
-  if(false) {
-   let shelfs = document.getElementsByTagName('ytd-shelf-renderer')
-   
-   for (var i = 1; i < shelfs.length; i++) {
-     shelfs[i].style.display = 'none';
-   }
-   
-  } else { 
-    document.getElementById('contents').style.display = 'none';
-  }
-}
-
-
-removeDistraction();
